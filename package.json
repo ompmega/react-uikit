@@ -13,7 +13,9 @@
   ],
   "main": "./lib",
   "scripts": {
-    "bundle": "babel ./src --out-dir ./lib"
+    "bundle": "babel ./src --out-dir ./lib",
+    "dev": "docz dev",
+    "build": "docz build"
   },
   "peerDependencies": {
     "react": "*",
@@ -40,7 +42,7 @@
     "babel-preset-stage-0": "^6.24.1",
     "babel-preset-stage-1": "^6.24.1",
     "docz": "latest",
-    "docz-plugin-babel6": "^0.2.11",
+    "docz-plugin-babel6": "latest",
     "prop-types": "^15.6.1",
     "uikit": "^3.0.0-rc.6"
   }

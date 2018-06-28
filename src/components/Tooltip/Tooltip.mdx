@@ -1,0 +1,39 @@
+---
+name: Tooltip
+route: /docs/tooltip
+menu: Components
+---
+
+import { Playground } from 'docz'
+import Button from '../Button'
+import Tooltip from './Tooltip'
+
+# Button
+
+## Usage
+<Playground>
+  <Tooltip title="Hello World">
+    <Button>Top</Button>
+  </Tooltip>
+  <Tooltip title="Hello World" options={{ pos: 'top-left' }}>
+    <Button>Top Left</Button>
+  </Tooltip>
+  <Tooltip title="Hello World" options={{ pos: 'top-right' }}>
+    <Button>Top Right</Button>
+  </Tooltip>
+  <Tooltip title="Hello World" options={{ pos: 'bottom' }}>
+    <Button>Bottom</Button>
+  </Tooltip>
+  <Tooltip title="Hello World" options={{ pos: 'bottom-left' }}>
+    <Button>Bottom Left</Button>
+  </Tooltip>
+  <Tooltip title="Hello World" options={{ pos: 'bottom-right' }}>
+    <Button>Bottom Right</Button>
+  </Tooltip>
+  <Tooltip title="Hello World" options={{ pos: 'right' }}>
+    <Button>Right</Button>
+  </Tooltip>
+  <Tooltip title="Hello World" options={{ pos: 'left' }}>
+    <Button>Left</Button>
+  </Tooltip>
+</Playground>
