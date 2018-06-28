@@ -1,0 +1,47 @@
+{
+  "name": "react-uikit",
+  "version": "0.0.1",
+  "description": "UIkit components for React",
+  "author": "Ompmega",
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "react-component",
+    "uikit",
+    "react-uikit",
+    "ecosystem-react"
+  ],
+  "main": "./lib",
+  "scripts": {
+    "bundle": "babel ./src --out-dir ./lib"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-dom": "*",
+    "uikit": "^3.*"
+  },
+  "dependencies": {
+    "classnames": "latest",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.3",
+    "babel-jest": "^22.4.4",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-inline-import": "^2.0.6",
+    "babel-plugin-react-transform": "^3.0.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-preset-stage-1": "^6.24.1",
+    "docz": "latest",
+    "docz-plugin-babel6": "^0.2.11",
+    "prop-types": "^15.6.1",
+    "uikit": "^3.0.0-rc.6"
+  }
+}
