@@ -60,4 +60,5 @@ typings/
 # next.js build output
 .next
 .docz
-.idea/
+
+.idea
