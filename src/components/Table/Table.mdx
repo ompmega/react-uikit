@@ -1,0 +1,198 @@
+---
+name: Table
+route: /docs/table
+menu: Components
+---
+
+import { Playground, PropsTable } from 'docz'
+import Table from './Table'
+
+# Table
+
+> Work in progress
+
+##### The `Table` component includes these sub-components:
+| Sub-component | Description |
+|-|-|
+| `Table.Caption` | The caption for the table. |
+| `Table.Head` | The table head `<thead>`. |
+| `Table.Body` | The table body `<tbody>`. |
+| `Table.Footer` | The table footer `<tfoot>`. |
+| `Table.Row` | The table row `<tr>`. |
+| `Table.Cell` | The table cell `<th>` or `<td>`. |
+
+## Usage
+<Playground>
+  <Table>
+    <Table.Caption>Table Caption</Table.Caption>
+    <Table.Head>
+      <Table.Row>
+        <Table.Cell>Table Heading</Table.Cell>
+        <Table.Cell>Table Heading</Table.Cell>
+        <Table.Cell>Table Heading</Table.Cell>
+      </Table.Row>
+    </Table.Head>
+    <Table.Footer>
+      <Table.Row>
+        <Table.Cell>Table Footer</Table.Cell>
+        <Table.Cell>Table Footer</Table.Cell>
+        <Table.Cell>Table Footer</Table.Cell>
+      </Table.Row>
+    </Table.Footer>
+    <Table.Body>
+      <Table.Row>
+        <Table.Cell>Table Data</Table.Cell>
+        <Table.Cell>Table Data</Table.Cell>
+        <Table.Cell>Table Data</Table.Cell>
+      </Table.Row>
+      <Table.Row>
+        <Table.Cell>Table Data</Table.Cell>
+        <Table.Cell>Table Data</Table.Cell>
+        <Table.Cell>Table Data</Table.Cell>
+      </Table.Row>
+    </Table.Body>
+  </Table>
+</Playground>
+
+---
+
+## Divider modifier
+
+Enable the table divider modifier using the `divider` prop.
+
+<Playground>
+  <Table divider>
+    <Table.Head>
+      <Table.Row>
+        <Table.Cell>Table Heading</Table.Cell>
+        <Table.Cell>Table Heading</Table.Cell>
+        <Table.Cell>Table Heading</Table.Cell>
+      </Table.Row>
+    </Table.Head>
+    <Table.Body>
+      <Table.Row>
+        <Table.Cell>Table Data</Table.Cell>
+        <Table.Cell>Table Data</Table.Cell>
+        <Table.Cell>Table Data</Table.Cell>
+      </Table.Row>
+      <Table.Row>
+        <Table.Cell>Table Data</Table.Cell>
+        <Table.Cell>Table Data</Table.Cell>
+        <Table.Cell>Table Data</Table.Cell>
+      </Table.Row>
+      <Table.Row>
+        <Table.Cell>Table Data</Table.Cell>
+        <Table.Cell>Table Data</Table.Cell>
+        <Table.Cell>Table Data</Table.Cell>
+      </Table.Row>
+    </Table.Body>
+  </Table>
+</Playground>
+
+---
+
+## Striped modifier
+
+Enable the table striped modifier using the `striped` prop.
+
+<Playground>
+  <Table striped>
+    <Table.Head>
+      <Table.Row>
+        <Table.Cell>Table Heading</Table.Cell>
+        <Table.Cell>Table Heading</Table.Cell>
+        <Table.Cell>Table Heading</Table.Cell>
+      </Table.Row>
+    </Table.Head>
+    <Table.Body>
+      <Table.Row>
+        <Table.Cell>Table Data</Table.Cell>
+        <Table.Cell>Table Data</Table.Cell>
+        <Table.Cell>Table Data</Table.Cell>
+      </Table.Row>
+      <Table.Row>
+        <Table.Cell>Table Data</Table.Cell>
+        <Table.Cell>Table Data</Table.Cell>
+        <Table.Cell>Table Data</Table.Cell>
+      </Table.Row>
+      <Table.Row>
+        <Table.Cell>Table Data</Table.Cell>
+        <Table.Cell>Table Data</Table.Cell>
+        <Table.Cell>Table Data</Table.Cell>
+      </Table.Row>
+    </Table.Body>
+  </Table>
+</Playground>
+
+---
+
+## Hover modifier
+
+Enable the table hover modifier using the `hover` prop.
+
+<Playground>
+  <Table hover>
+    <Table.Head>
+      <Table.Row>
+        <Table.Cell>Table Heading</Table.Cell>
+        <Table.Cell>Table Heading</Table.Cell>
+        <Table.Cell>Table Heading</Table.Cell>
+      </Table.Row>
+    </Table.Head>
+    <Table.Body>
+      <Table.Row>
+        <Table.Cell>Table Data</Table.Cell>
+        <Table.Cell>Table Data</Table.Cell>
+        <Table.Cell>Table Data</Table.Cell>
+      </Table.Row>
+      <Table.Row>
+        <Table.Cell>Table Data</Table.Cell>
+        <Table.Cell>Table Data</Table.Cell>
+        <Table.Cell>Table Data</Table.Cell>
+      </Table.Row>
+      <Table.Row>
+        <Table.Cell>Table Data</Table.Cell>
+        <Table.Cell>Table Data</Table.Cell>
+        <Table.Cell>Table Data</Table.Cell>
+      </Table.Row>
+    </Table.Body>
+  </Table>
+</Playground>
+
+---
+
+## Size modifiers
+<Playground>
+  <Table divider size="small">
+    <Table.Head>
+      <Table.Row>
+        <Table.Cell>Table Heading</Table.Cell>
+        <Table.Cell>Table Heading</Table.Cell>
+        <Table.Cell>Table Heading</Table.Cell>
+      </Table.Row>
+    </Table.Head>
+    <Table.Body>
+      <Table.Row>
+        <Table.Cell>Table Data</Table.Cell>
+        <Table.Cell>Table Data</Table.Cell>
+        <Table.Cell>Table Data</Table.Cell>
+      </Table.Row>
+      <Table.Row>
+        <Table.Cell>Table Data</Table.Cell>
+        <Table.Cell>Table Data</Table.Cell>
+        <Table.Cell>Table Data</Table.Cell>
+      </Table.Row>
+      <Table.Row>
+        <Table.Cell>Table Data</Table.Cell>
+        <Table.Cell>Table Data</Table.Cell>
+        <Table.Cell>Table Data</Table.Cell>
+      </Table.Row>
+    </Table.Body>
+  </Table>
+</Playground>
+
+---
+
+## Component props
+### Table
+<PropsTable of={Table} />

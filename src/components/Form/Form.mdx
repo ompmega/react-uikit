@@ -1,0 +1,116 @@
+---
+name: Form
+route: /docs/form
+menu: Components
+---
+
+import { Playground, PropsTable } from 'docz'
+import Form from './Form'
+import Input from '../Input'
+import Button from '../Button'
+import Margin from '../Margin'
+import Card from '../Card'
+import Select from '../Select'
+
+# Form
+
+##### The `Form` component includes these sub-components:
+| Sub-component | Description |
+|-|-|
+| `Form.Fieldset` | The form fieldset. |
+| `Form.Legend` | The form legend. |
+| `Form.Controls` | The form controls. |
+
+## Usage
+<Playground>
+  <Form>
+    <Form.Fieldset>
+      <Form.Legend>Form</Form.Legend>
+      <Margin>
+        <Input placeholder="Your name" />
+      </Margin>
+      <Margin>
+        <Input placeholder="Your email" />
+      </Margin>
+      <Margin>
+        <Input.Textarea placeholder="Your message" />
+      </Margin>
+      <Button type="submit" variant="primary">Submit</Button>
+    </Form.Fieldset>
+  </Form>
+</Playground>
+
+---
+
+## Layout
+### Stacked form
+<Playground>
+  <Form stacked>
+    <Margin>
+      <Input.Label htmlFor="text1">Text</Input.Label>
+      <Form.Controls>
+        <Input id="text1" placeholder="Some text..." />
+      </Form.Controls>
+    </Margin>
+    <Margin>
+      <Input.Label htmlFor="select1">Select</Input.Label>
+      <Form.Controls>
+        <Select id="select1">
+          <Select.Option value={1}>Option 01</Select.Option>
+          <Select.Option value={2}>Option 02</Select.Option>
+        </Select>
+      </Form.Controls>
+    </Margin>
+    <Margin>
+      <Input.Label component="div">Radio</Input.Label>
+      <Form.Controls>
+        <Input.Label>
+          <Input.Radio name="radio1" /> Option 01
+        </Input.Label>
+        <br />
+        <Input.Label>
+          <Input.Radio name="radio1" /> Option 02
+        </Input.Label>
+      </Form.Controls>
+    </Margin>
+  </Form>
+</Playground>
+
+### Horizontal form
+<Playground>
+  <Form horizontal>
+    <Margin>
+      <Input.Label htmlFor="text2">Text</Input.Label>
+      <Form.Controls>
+        <Input id="text2" placeholder="Some text..." />
+      </Form.Controls>
+    </Margin>
+    <Margin>
+      <Input.Label htmlFor="select2">Select</Input.Label>
+      <Form.Controls>
+        <Select id="select2">
+          <Select.Option value={1}>Option 01</Select.Option>
+          <Select.Option value={2}>Option 02</Select.Option>
+        </Select>
+      </Form.Controls>
+    </Margin>
+    <Margin>
+      <Input.Label component="div">Radio</Input.Label>
+      <Form.Controls>
+        <Input.Label>
+          <Input.Radio name="radio2" /> Option 01
+        </Input.Label>
+        <br />
+        <Input.Label>
+          <Input.Radio name="radio2" /> Option 02
+        </Input.Label>
+      </Form.Controls>
+    </Margin>
+  </Form>
+</Playground>
+
+---
+
+## Component props
+### Form
+<PropsTable of={Form} />

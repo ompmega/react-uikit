@@ -4,36 +4,74 @@ route: /docs/tooltip
 menu: Components
 ---
 
-import { Playground } from 'docz'
-import Button from '../Button'
+import { Playground, PropsTable } from 'docz'
 import Tooltip from './Tooltip'
+import Button from '../Button'
+import Margin from '../Margin'
 
-# Button
+# Tooltip
 
 ## Usage
 <Playground>
   <Tooltip title="Hello World">
-    <Button>Top</Button>
-  </Tooltip>
-  <Tooltip title="Hello World" options={{ pos: 'top-left' }}>
-    <Button>Top Left</Button>
-  </Tooltip>
-  <Tooltip title="Hello World" options={{ pos: 'top-right' }}>
-    <Button>Top Right</Button>
-  </Tooltip>
-  <Tooltip title="Hello World" options={{ pos: 'bottom' }}>
-    <Button>Bottom</Button>
-  </Tooltip>
-  <Tooltip title="Hello World" options={{ pos: 'bottom-left' }}>
-    <Button>Bottom Left</Button>
-  </Tooltip>
-  <Tooltip title="Hello World" options={{ pos: 'bottom-right' }}>
-    <Button>Bottom Right</Button>
-  </Tooltip>
-  <Tooltip title="Hello World" options={{ pos: 'right' }}>
-    <Button>Right</Button>
-  </Tooltip>
-  <Tooltip title="Hello World" options={{ pos: 'left' }}>
-    <Button>Left</Button>
+    <Button>Hover</Button>
   </Tooltip>
 </Playground>
+
+---
+
+## Alignments
+<Playground>
+  <Margin dynamic>
+    <Tooltip title="Hello World">
+      <Button>Top</Button>
+    </Tooltip>
+    <Tooltip title="Hello World" position="top-left">
+      <Button>Top Left</Button>
+    </Tooltip>
+    <Tooltip title="Hello World" position="top-right">
+      <Button>Top Right</Button>
+    </Tooltip>
+    <Tooltip title="Hello World" position="bottom">
+      <Button>Bottom</Button>
+    </Tooltip>
+    <Tooltip title="Hello World" position="bottom-left">
+      <Button>Bottom Left</Button>
+    </Tooltip>
+    <Tooltip title="Hello World" position="bottom-right">
+      <Button>Bottom Right</Button>
+    </Tooltip>
+    <Tooltip title="Hello World" position="right">
+      <Button>Right</Button>
+    </Tooltip>
+    <Tooltip title="Hello World" position="left">
+      <Button>Left</Button>
+    </Tooltip>
+  </Margin>
+</Playground>
+
+---
+
+## Delay
+<Playground>
+  <Tooltip title="Hello World" delay={500}>
+    <Button>Hover</Button>
+  </Tooltip>
+</Playground>
+
+---
+
+## Component props
+### Tooltip
+<PropsTable of={Tooltip} />
+
+#### Note:
+You may pass options through the `options` prop as an object, but doing so will overwrite the current props.
+
+---
+
+## Events
+### Tooltip
+
+#### Note:
+Events are triggered on the `document` rather than on the component. To listen for events, use the `UIkit.util.on` utility function as shown in the [official docs](https://getuikit.com/docs/tooltip#javascript).

@@ -1,0 +1,66 @@
+---
+name: Card
+route: /docs/card
+menu: Components
+---
+
+import { Playground, PropsTable } from 'docz'
+import Card from './Card'
+
+# Card
+> Work in progress
+
+##### The `Card` component includes these sub-components:
+| Sub-component | Description |
+|-|-|
+| `Card.Title` | The card title. |
+| `Card.Body` | The card body. |
+| `Card.Header` | The card header. |
+| `Card.Footer` | The card footer. |
+
+## Usage
+<Playground>
+  <Card body>
+    <Card.Title>Default</Card.Title>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  </Card>
+</Playground>
+
+---
+
+## Style variations
+<Playground>
+  <Card body variant="default">
+    <Card.Title>Default</Card.Title>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  </Card>
+  <Card body variant="primary">
+    <Card.Title>Primary</Card.Title>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  </Card>
+  <Card body variant="secondary">
+    <Card.Title>Secondary</Card.Title>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  </Card>
+</Playground>
+
+---
+
+## Header & Footer
+<Playground>
+  <Card>
+    <Card.Header>
+      <Card.Title>Default</Card.Title>
+    </Card.Header>
+    <Card.Body>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </Card.Body>
+    <Card.Footer>Footer</Card.Footer>
+  </Card>
+</Playground>
+
+---
+
+## Component props
+#### Card
+<PropsTable of={Card} />

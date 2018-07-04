@@ -1,0 +1,39 @@
+---
+name: Grid (WIP)
+route: /docs/grid
+menu: Components
+---
+
+import { Playground, PropsTable } from 'docz'
+import Grid from './Grid'
+import Card from '../Card'
+
+# Grid
+
+> Work in progress
+
+##### The `Grid` component includes these sub-components:
+| Sub-component | Description |
+|-|-|
+| `Grid.Item` | This is the column for the grid. |
+
+## Usage
+<Playground>
+  <Grid>
+    <Grid.Item>
+      <Card body>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</Card>
+    </Grid.Item>
+    <Grid.Item>
+      <Card body>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</Card>
+    </Grid.Item>
+  </Grid>
+</Playground>
+
+#### NOTE
+The `Grid` component requires that children be instances of the `Grid.Item` sub-component.
+
+---
+
+## Component props
+### Grid
+<PropsTable of={Grid} />

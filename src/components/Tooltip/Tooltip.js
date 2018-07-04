@@ -3,26 +3,51 @@ import ReactDOM from 'react-dom'
 import PropTypes from 'prop-types'
 import UIkit from 'uikit'
 
-const defaultOptions = {
-  pos: 'top',
-  duration: 100
-}
+class Tooltip extends React.Component {
 
-class Tooltip extends React.PureComponent {
   static propTypes = {
     title: PropTypes.string.isRequired,
     options: PropTypes.object,
-    children: PropTypes.node.isRequired
+    children: PropTypes.node.isRequired,
+    position: PropTypes.oneOf(['top', 'top-left', 'top-right', 'bottom', 'bottom-left', 'bottom-right', 'left', 'right']),
+    duration: PropTypes.number,
+    delay: PropTypes.number,
+    animation: PropTypes.string,
   }
 
   static defaultProps = {
-    options: defaultOptions
+    options: {},
+    position: 'top',
+    duration: 100,
+    animation: 'uk-animation-scale-up',
+    /*onBeforeShow: f=>f,
+    onShow: f=>f,
+    onShown: f=>f,
+    onBeforeHide: f=>f,
+    onHide: f=>f,
+    onHidden: f=>f,*/
   }
 
+  /*_events = {
+    'beforeshow': () => this.props.onBeforeShow(),
+    'show': () => this.props.onShow(),
+    'shown': () => this.props.onShown(),
+    'beforehide': () => this.props.onBeforeHide(),
+    'hide': () => this.props.onHide(),
+    'hidden': () => this.props.onHidden(),
+  }*/
+
   componentDidMount() {
+    const {
+      position: pos,
+      duration,
+      delay,
+      animation
+    } = this.props
+
     const options = {
-      defaultOptions,
-      ...this.props.options
+      ...{ pos, duration, delay, animation },
+      ...this.props.options,
     }
 
     this.component = UIkit.tooltip(ReactDOM.findDOMNode(this), options)
@@ -36,6 +61,10 @@ class Tooltip extends React.PureComponent {
     const {
       title,
       children,
+      position,
+      options,
+      duration,
+      animation,
       ...rest
     } = this.props
 

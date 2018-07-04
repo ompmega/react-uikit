@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import classNames from 'classnames'
 
 const Container = (props) => {
@@ -9,20 +8,12 @@ const Container = (props) => {
     ...rest
   } = props
 
-  const className = classNames(
-    customClassName,
-    'uk-container'
-  )
+  const className = classNames(customClassName, 'uk-container')
 
-  return React.createElement(
-    component,
-    { className, ...rest }
-  )
-}
-
-Container.propTypes = {
-  className: PropTypes.string,
-  component: PropTypes.element
+  return React.createElement(component, {
+    className,
+    ...rest
+  })
 }
 
 Container.defaultProps = {

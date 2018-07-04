@@ -24,8 +24,10 @@
   },
   "dependencies": {
     "classnames": "latest",
+    "lodash": "^4.17.10",
     "react": "^16.4.1",
-    "react-dom": "^16.4.1"
+    "react-dom": "^16.4.1",
+    "react-portal": "^4.1.5"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
@@ -35,13 +37,15 @@
     "babel-loader": "^7.1.4",
     "babel-plugin-inline-import": "^2.0.6",
     "babel-plugin-react-transform": "^3.0.0",
+    "babel-plugin-styled-components": "^1.5.1",
     "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-decorators-legacy": "^1.3.5",
     "babel-polyfill": "^6.26.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "babel-preset-stage-1": "^6.24.1",
-    "docz": "latest",
+    "docz": "^0.4.0",
     "docz-plugin-babel6": "latest",
     "prop-types": "^15.6.1",
     "uikit": "^3.0.0-rc.6"

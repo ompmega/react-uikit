@@ -1,0 +1,90 @@
+---
+name: Dropdown
+route: /docs/dropdown
+menu: Components
+---
+
+import { Playground, PropsTable } from 'docz'
+import Dropdown from './Dropdown'
+import Button from '../Button'
+
+# Dropdown
+
+##### The `Dropdown` component includes these sub-components:
+| Sub-component | Description |
+|-|-|
+| `Dropdown.Container` | This is the container for the dropdown. |
+
+## Usage
+<Playground>
+  <Dropdown.Container>
+    <Button>Hover</Button>
+    <Dropdown>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+    </Dropdown>
+  </Dropdown.Container>
+  <Dropdown.Container>
+    <Button>Click</Button>
+    <Dropdown mode="click">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+    </Dropdown>
+  </Dropdown.Container>
+</Playground>
+
+---
+
+## Position
+<Playground>
+  <Dropdown.Container>
+    <Button>Top Right</Button>
+    <Dropdown position="top-right">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+    </Dropdown>
+  </Dropdown.Container>
+  <Dropdown.Container>
+    <Button>Bottom Justify</Button>
+    <Dropdown position="bottom-justify">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+    </Dropdown>
+  </Dropdown.Container>
+  <Dropdown.Container>
+    <Button>Right Center</Button>
+    <Dropdown position="right-center">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+    </Dropdown>
+  </Dropdown.Container>
+</Playground>
+
+---
+
+## Offset
+<Playground>
+  <Dropdown.Container>
+    <Button>Hover</Button>
+    <Dropdown offset={80}>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+    </Dropdown>
+  </Dropdown.Container>
+</Playground>
+
+---
+
+## Component props
+### Dropdown
+<PropsTable of={Dropdown} />
+
+---
+
+## Events
+### Dropdown
+
+| UIkit event | Component event prop |
+|-|-|
+| toggle | `onToggle` |
+| stack | `onStack` |
+| beforeshow | `onBeforeShow` |
+| show | `onShow` |
+| shown | `onShown` |
+| beforehide | `onBeforeHide` |
+| hide | `onHide` |
+| hidden | `onHidden` |

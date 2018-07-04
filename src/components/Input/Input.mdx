@@ -1,0 +1,76 @@
+---
+name: Input
+route: /docs/input
+menu: Components
+---
+
+import { Playground, PropsTable } from 'docz'
+import Input from './Input'
+import Margin from '../Margin'
+
+# Input
+
+##### The `Input` component includes these sub-components:
+| Sub-component | Description |
+|-|-|
+| `Input.Label` | The input label. |
+| `Input.Checkbox` | The input checkbox. |
+| `Input.Radio` | The input radio. |
+| `Input.Textarea` | The input textarea. |
+
+## Usage
+<Playground>
+  <Margin>
+    <Input placeholder="Input" />
+  </Margin>
+  <Margin>
+    <Input.Textarea placeholder="Textarea" />
+  </Margin>
+  <Margin>
+    <Input.Label>
+      <Input.Checkbox defaultChecked /> Checkbox A
+    </Input.Label>
+    <Input.Label>
+      <Input.Checkbox /> Checkbox B
+    </Input.Label>
+  </Margin>
+  <Input.Label>
+    <Input.Radio name="radio1" defaultChecked /> Radio A
+  </Input.Label>
+  <Input.Label>
+    <Input.Radio name="radio1" /> Radio B
+  </Input.Label>
+</Playground>
+
+---
+
+## Sizes
+<Playground>
+  <Margin>
+    <Input size="large" placeholder="Large" />
+  </Margin>
+  <Margin>
+    <Input placeholder="Default" />
+  </Margin>
+  <Margin>
+    <Input size="small" placeholder="Small" />
+  </Margin>
+</Playground>
+
+---
+
+## Component props
+### Input
+<PropsTable of={Input} />
+
+### Input.Label
+<PropsTable of={Input.Label} />
+
+### Input.Checkbox
+<PropsTable of={Input.Checkbox} />
+
+### Input.Radio
+<PropsTable of={Input.Radio} />
+
+### Input.Textarea
+<PropsTable of={Input.Textarea} />

@@ -1,0 +1,48 @@
+---
+name: Flex
+route: /docs/flex
+menu: Components
+---
+
+import { Playground, PropsTable } from 'docz'
+import Flex from './Flex'
+import Card from '../Card'
+
+# Flex
+
+## Usage
+<Playground>
+  <Flex>
+    <Card body>Item 1</Card>
+    <Card body className="uk-margin-left">Item 2</Card>
+    <Card body className="uk-margin-left">Item 3</Card>
+  </Flex>
+</Playground>
+
+---
+
+## Horizontal alignment
+<Playground>
+  <Flex align="center">
+    <Card body>Item 1</Card>
+    <Card body className="uk-margin-left">Item 2</Card>
+    <Card body className="uk-margin-left">Item 3</Card>
+  </Flex>
+</Playground>
+
+---
+
+## Vertical alignment
+<Playground>
+  <Flex align="middle">
+    <Card body>Item 1</Card>
+    <Card body className="uk-margin-left">Item 2<br/>...</Card>
+    <Card body className="uk-margin-left">Item 3<br/>...<br/>...</Card>
+  </Flex>
+</Playground>
+
+---
+
+## Component props
+### Flex
+<PropsTable of={Flex} />

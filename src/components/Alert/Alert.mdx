@@ -1,0 +1,72 @@
+---
+name: Alert
+route: /docs/alert
+menu: Components
+---
+
+import { Playground, PropsTable } from 'docz'
+import Alert from './Alert'
+
+# Alert
+
+## Usage
+<Playground>
+  <Alert>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  </Alert>
+</Playground>
+
+---
+
+## Closable
+You may add either the `<Alert.Close />` component or the `closable` prop to make it closable.
+<Playground>
+  <Alert>
+    <Alert.Close />
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  </Alert>
+  <Alert closable>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  </Alert>
+  <Alert closable>
+    <Alert.Close />
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  </Alert>
+</Playground>
+
+---
+
+## Style variations
+<Playground>
+  <Alert variant="primary">
+    <Alert.Close />
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+  </Alert>
+  <Alert variant="success">
+    <Alert.Close />
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+  </Alert>
+  <Alert variant="warning">
+    <Alert.Close />
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+  </Alert>
+  <Alert variant="danger">
+    <Alert.Close />
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+  </Alert>
+</Playground>
+
+---
+## Component props
+### Alert
+<PropsTable of={Alert} />
+
+---
+
+## Events
+### Alert
+
+| UIkit event | Component event prop |
+|-|-|
+| beforehide | `onBeforeHide` |
+| hide | `onHide` |

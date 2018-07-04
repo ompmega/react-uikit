@@ -1,0 +1,34 @@
+---
+name: Tab
+route: /docs/tab
+menu: Components
+---
+
+import { Playground, PropsTable } from 'docz'
+import Tab from './Tab'
+
+# Tab
+
+##### The `Tab` component includes these sub-components:
+| Sub-component | Description |
+|-|-|
+| `Tab.Item` | The tab item. |
+
+## Usage
+<Playground>
+  <Tab>
+    <Tab.Item>Left</Tab.Item>
+    <Tab.Item>Item</Tab.Item>
+    <Tab.Item>Item</Tab.Item>
+    <Tab.Item disabled>Disabled</Tab.Item>
+  </Tab>
+</Playground>
+
+---
+
+## Component props
+#### Tab
+<PropsTable of={Tab} />
+
+#### Tab.Item
+<PropsTable of={Tab.Item} />

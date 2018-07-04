@@ -1,0 +1,91 @@
+---
+name: Drop
+route: /docs/drop
+menu: Components
+---
+
+import { Playground, PropsTable } from 'docz'
+import Drop from './Drop'
+import Card from '../Card'
+import Button from '../Button'
+
+# Drop
+
+##### The `Drop` component includes these sub-components:
+| Sub-component | Description |
+|-|-|
+| `Drop.Container` | This is the container for the drop. |
+
+## Usage
+<Playground>
+  <Drop.Container>
+    <Button>Hover</Button>
+    <Drop>
+      <Card body>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</Card>
+    </Drop>
+  </Drop.Container>
+  <Drop.Container>
+    <Button>Click</Button>
+    <Drop mode="click">
+      <Card body>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</Card>
+    </Drop>
+  </Drop.Container>
+</Playground>
+
+---
+
+## Position
+<Playground>
+  <Drop.Container>
+    <Button>Top Right</Button>
+    <Drop position="top-right">
+      <Card body>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</Card>
+    </Drop>
+  </Drop.Container>
+  <Drop.Container>
+    <Button>Bottom Justify</Button>
+    <Drop position="bottom-justify">
+      <Card body>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</Card>
+    </Drop>
+  </Drop.Container>
+  <Drop.Container>
+    <Button>Right Center</Button>
+    <Drop position="right-center">
+      <Card body>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</Card>
+    </Drop>
+  </Drop.Container>
+</Playground>
+
+---
+
+## Offset
+<Playground>
+  <Drop.Container>
+    <Button>Hover</Button>
+    <Drop offset={80}>
+      <Card body>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</Card>
+    </Drop>
+  </Drop.Container>
+</Playground>
+
+---
+
+## Component props
+### Drop
+<PropsTable of={Drop} />
+
+---
+
+## Events
+### Drop
+
+| UIkit event | Component event prop |
+|-|-|
+| toggle | `onToggle` |
+| stack | `onStack` |
+| beforeshow | `onBeforeShow` |
+| show | `onShow` |
+| shown | `onShown` |
+| beforehide | `onBeforeHide` |
+| hide | `onHide` |
+| hidden | `onHidden` |
