@@ -4,8 +4,8 @@
 UIkit components for React.
 
 ## Documentation
-[React UIkit Docs](https://react-uikit.ompmega.com)
-[UIkit Docs](https://getuikit.com/docs/introduction)
+* [React UIkit Docs](https://react-uikit.ompmega.com)
+* [UIkit Docs](https://getuikit.com/docs/introduction)
 
 ## License
 MIT
