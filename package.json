@@ -45,7 +45,8 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "babel-preset-stage-1": "^6.24.1",
-    "docz": "^0.4.0",
+    "docz": "^0.5.2",
+    "docz-core": "^0.5.2",
     "docz-plugin-babel6": "latest",
     "prop-types": "^15.6.1",
     "uikit": "^3.0.0-rc.6"
