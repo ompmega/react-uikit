@@ -9,7 +9,7 @@ import Button from './Button'
 import Margin from '../Margin'
 
 # Button
-Docs: https://getuikit.com/docs/button
+### Easily create nice looking buttons, which come in different styles.
 
 ## Usage
 <Playground>
@@ -25,21 +25,73 @@ Adding the `href` prop to any button will convert to `a` element automatically.
 
 ## Style variations
 <Playground>
+  <Button>Default</Button>
+  <Button variant="primary">Primary</Button>
+  <Button variant="secondary">Secondary</Button>
+  <Button variant="danger">Danger</Button>
+  <Button variant="text">Text</Button>
+  <Button variant="link">Link</Button>
+</Playground>
+
+---
+
+## Size modifiers
+<Playground>
   <Margin>
-    <Button>Default</Button>
-    <Button variant="primary">Primary</Button>
-    <Button variant="secondary">Secondary</Button>
-    <Button variant="danger">Danger</Button>
-    <Button variant="text">Text</Button>
-    <Button variant="link">Link</Button>
+    <Button size="small">Small button</Button>
+    <Button size="small" variant="primary">Small button</Button>
+    <Button size="small" variant="secondary">Small button</Button>
+    <Button size="small" variant="danger">Small button</Button>
   </Margin>
   <Margin>
-    <Button href="/">Default</Button>
-    <Button variant="primary" href="/">Primary</Button>
-    <Button variant="secondary" href="/">Secondary</Button>
-    <Button variant="danger" href="/">Danger</Button>
-    <Button variant="text" href="/">Text</Button>
-    <Button variant="link" href="/">Link</Button>
+    <Button size="large">Small button</Button>
+    <Button size="large" variant="primary">Small button</Button>
+    <Button size="large" variant="secondary">Small button</Button>
+    <Button size="large" variant="danger">Small button</Button>
+  </Margin>
+</Playground>
+
+---
+
+## Width modifiers
+<Playground>
+  <Button block>Button</Button>
+  <Button block variant="primary">Button</Button>
+  <Button block variant="secondary">Button</Button>
+  <Button block variant="danger">Button</Button>
+</Playground>
+
+---
+
+## Group
+<Playground>
+  <Margin>
+    <Button.Group>
+      <Button>Button</Button>
+      <Button>Button</Button>
+      <Button>Button</Button>
+    </Button.Group>
+  </Margin>
+  <Margin>
+    <Button.Group>
+      <Button variant="primary">Button</Button>
+      <Button variant="primary">Button</Button>
+      <Button variant="primary">Button</Button>
+    </Button.Group>
+  </Margin>
+  <Margin>
+    <Button.Group>
+      <Button variant="secondary">Button</Button>
+      <Button variant="secondary">Button</Button>
+      <Button variant="secondary">Button</Button>
+    </Button.Group>
+  </Margin>
+  <Margin>
+    <Button.Group>
+      <Button variant="danger">Button</Button>
+      <Button variant="danger">Button</Button>
+      <Button variant="danger">Button</Button>
+    </Button.Group>
   </Margin>
 </Playground>
 
