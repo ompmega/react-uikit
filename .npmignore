@@ -1,0 +1,5 @@
+.coverage
+*.mdx
+docs
+src
+test
