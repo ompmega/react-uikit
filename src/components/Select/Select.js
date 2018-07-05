@@ -19,10 +19,6 @@ const Select = (props) => {
   )
 }
 
-Select.propTypes = {
-  placeholder: PropTypes.string
-}
-
 // Sub-components
 Select.Option = SelectOption
 
