@@ -1,9 +1,11 @@
 {
   "name": "react-uikit",
   "version": "0.0.1",
-  "description": "UIkit components for React",
-  "author": "Ompmega",
+  "description": "UIkit components built with React",
+  "repository": "https://github.com/ompmega/react-uikit.git",
+  "author": "Ompmega <ompmega+github@gmail.com> (https://github.com/ompmega)",
   "license": "MIT",
+  "homepage": "https://react-uikit.ompmega.com",
   "keywords": [
     "react",
     "react-component",
@@ -25,8 +27,6 @@
   "dependencies": {
     "classnames": "latest",
     "lodash": "^4.17.10",
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1",
     "react-portal": "^4.1.5"
   },
   "devDependencies": {
@@ -49,6 +49,8 @@
     "docz-core": "^0.5.2",
     "docz-plugin-babel6": "latest",
     "prop-types": "^15.6.1",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
     "uikit": "^3.0.0-rc.6"
   }
 }
