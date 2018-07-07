@@ -1,0 +1,67 @@
+---
+name: Link
+route: /docs/link
+menu: Components
+---
+
+import { Playground, PropsTable, Link as _Link } from 'docz'
+import Link from './Link'
+
+# Link
+### Define different styles to integrate links into specific content.
+
+## Usage
+
+<Playground>
+  <Link>Link</Link><br />
+  <Link href="http://example.com">Link</Link>
+</Playground>
+
+---
+
+## Muted
+
+<Playground>
+  <Link muted>Link</Link>
+</Playground>
+
+---
+
+## Voided
+Use the `voided` prop for links that perform JavaScript but don't go anywhere.
+
+<Playground>
+  <Link voided>Link</Link>
+</Playground>
+
+---
+
+## Link heading
+
+<Playground>
+  <h3><Link heading>Heading</Link></h3>
+</Playground>
+
+---
+
+## Link reset
+
+<Playground>
+  <Link reset>Link</Link>
+  <h3><Link reset>Heading</Link></h3>
+</Playground>
+
+---
+
+## With React Router
+Learn more about the [React Router](https://reacttraining.com/react-router/) library.
+
+<Playground>
+  <Link muted component={_Link} to="/docs/button">Link with React Router</Link>
+</Playground>
+
+---
+
+## Component props
+### Link
+<PropsTable of={Link} />
