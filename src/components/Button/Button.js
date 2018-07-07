@@ -7,6 +7,7 @@ import ButtonGroup from './ButtonGroup'
 const Button = (props) => {
   const {
     className: customClassName,
+    component,
     variant,
     small,
     large,
@@ -24,17 +25,24 @@ const Button = (props) => {
     'uk-width-1-1': block,
   })
 
-  return href ? (
+  if (!!href) return (
     <a
       href={href}
       className={className}
       {...rest} />
-  ) : (
+  )
+
+  if (component === 'button') return (
     <button
       type={type}
       className={className}
       {...rest} />
   )
+
+  return React.createElement(component, {
+    className: className,
+    ...rest
+  })
 }
 
 Button.propTypes = {
@@ -50,6 +58,7 @@ Button.propTypes = {
 }
 
 Button.defaultProps = {
+  component: 'button',
   type: 'button',
   variant: 'default',
   small: false,

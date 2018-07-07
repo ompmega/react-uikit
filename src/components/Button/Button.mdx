@@ -4,7 +4,7 @@ route: /docs/button
 menu: Components
 ---
 
-import { Playground, PropsTable } from 'docz'
+import { Playground, PropsTable, Link as _Link } from 'docz'
 import Button from './Button'
 import Margin from '../Margin'
 
@@ -24,6 +24,7 @@ Adding the `href` prop to any button will convert to `a` element automatically.
 ---
 
 ## Style variations
+
 <Playground>
   <Button>Default</Button>
   <Button variant="primary">Primary</Button>
@@ -36,6 +37,7 @@ Adding the `href` prop to any button will convert to `a` element automatically.
 ---
 
 ## Size modifiers
+
 <Playground>
   <Margin>
     <Button size="small">Small button</Button>
@@ -54,6 +56,7 @@ Adding the `href` prop to any button will convert to `a` element automatically.
 ---
 
 ## Width modifiers
+
 <Playground>
   <Button block>Button</Button>
   <Button block variant="primary">Button</Button>
@@ -64,6 +67,7 @@ Adding the `href` prop to any button will convert to `a` element automatically.
 ---
 
 ## Group
+
 <Playground>
   <Margin>
     <Button.Group>
@@ -93,6 +97,15 @@ Adding the `href` prop to any button will convert to `a` element automatically.
       <Button variant="danger">Button</Button>
     </Button.Group>
   </Margin>
+</Playground>
+
+---
+
+## With React Router
+Learn more about the [React Router](https://reacttraining.com/react-router/) library.
+
+<Playground>
+  <Button component={_Link} to="/docs/link">Button with React Router</Button>
 </Playground>
 
 ---
