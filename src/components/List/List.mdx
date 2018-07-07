@@ -1,0 +1,80 @@
+---
+name: List
+route: /docs/list
+menu: Components
+---
+
+import { Playground, PropsTable } from 'docz'
+import List from './List'
+
+# List
+### Easily create nice looking lists, which come in different styles.
+
+| Sub-component | Description |
+|-|-|
+| `List.Item` | The list item. |
+
+## Usage
+
+<Playground>
+  <List>
+    <List.Item>List item 1</List.Item>
+    <List.Item>List item 2</List.Item>
+    <List.Item>List item 3</List.Item>
+  </List>
+</Playground>
+
+---
+
+## Bullet modifier
+
+<Playground>
+  <List bullet>
+    <List.Item>List item 1</List.Item>
+    <List.Item>List item 2</List.Item>
+    <List.Item>List item 3</List.Item>
+  </List>
+</Playground>
+
+---
+
+## Divider modifier
+
+<Playground>
+  <List divider>
+    <List.Item>List item 1</List.Item>
+    <List.Item>List item 2</List.Item>
+    <List.Item>List item 3</List.Item>
+  </List>
+</Playground>
+
+---
+
+## Striped modifier
+
+<Playground>
+  <List striped>
+    <List.Item>List item 1</List.Item>
+    <List.Item>List item 2</List.Item>
+    <List.Item>List item 3</List.Item>
+  </List>
+</Playground>
+
+---
+
+## Large modifier
+
+<Playground>
+  <List striped large>
+    <List.Item>List item 1</List.Item>
+    <List.Item>List item 2</List.Item>
+    <List.Item>List item 3</List.Item>
+  </List>
+</Playground>
+
+---
+
+## Component props
+
+### List
+<PropsTable of={List} />

@@ -41,7 +41,6 @@ const Button = (props) => {
 
   return React.createElement(component, {
     className: className,
-    type: type,
     ...rest
   })
 }

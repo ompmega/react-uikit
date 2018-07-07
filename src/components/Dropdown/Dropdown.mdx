@@ -7,11 +7,12 @@ menu: Components
 import { Playground, PropsTable } from 'docz'
 import Dropdown from './Dropdown'
 import Button from '../Button'
+import Nav from '../Nav'
+import Link from '../Link'
 
 # Dropdown
 ### Defines different styles for a toggleable dropdown.
 
-##### The `Dropdown` component includes these sub-components:
 | Sub-component | Description |
 |-|-|
 | `Dropdown.Container` | This is the container for the dropdown. |
@@ -64,6 +65,36 @@ import Button from '../Button'
     <Button>Hover</Button>
     <Dropdown offset={80}>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+    </Dropdown>
+  </Dropdown.Container>
+</Playground>
+
+---
+
+## Nav in dropdown
+<Playground>
+  <Dropdown.Container>
+    <Button>Hover</Button>
+    <Dropdown>
+      <Nav>
+        <Nav.Item active>
+          <Link>Active</Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Link>Item</Link>
+        </Nav.Item>
+        <Nav.Header>Header</Nav.Header>
+        <Nav.Item>
+          <Link>Item</Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Link>Item</Link>
+        </Nav.Item>
+        <Nav.Divider />
+        <Nav.Item>
+          <Link>Item</Link>
+        </Nav.Item>
+      </Nav>
     </Dropdown>
   </Dropdown.Container>
 </Playground>

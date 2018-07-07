@@ -1,0 +1,38 @@
+---
+name: Breadcrumb
+route: /docs/breadcrumb
+menu: Components
+---
+
+import { Playground, PropsTable } from 'docz'
+import Breadcrumb from './Breadcrumb'
+import Link from '../Link'
+
+# Breadcrumb
+### Create breadcrumbs to show users their location within a website.
+
+| Sub-component | Description |
+|-|-|
+| `Breadcrumb.Item` | The breadcrumb item. |
+
+## Usage
+<Playground>
+  <Breadcrumb>
+    <Breadcrumb.Item>
+      <Link>Item</Link>
+    </Breadcrumb.Item>
+    <Breadcrumb.Item>
+      <Link>Item</Link>
+    </Breadcrumb.Item>
+    <Breadcrumb.Item disabled>
+      <Link>Disabled</Link>
+    </Breadcrumb.Item>
+    <Breadcrumb.Item active>Active</Breadcrumb.Item>
+  </Breadcrumb>
+</Playground>
+
+---
+
+## Component props
+### Breadcrumb.Item
+<PropsTable of={Breadcrumb.Item} />
