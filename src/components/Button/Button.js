@@ -25,13 +25,19 @@ const Button = (props) => {
     'uk-width-1-1': block,
   })
 
-  if (!!href) {
-    return React.createElement('a', {
-      className: className,
-      href: href,
-      ...rest
-    })
-  }
+  if (!!href) return (
+    <a
+      href={href}
+      className={className}
+      {...rest} />
+  )
+
+  if (component === 'button') return (
+    <button
+      type={type}
+      className={className}
+      {...rest} />
+  )
 
   return React.createElement(component, {
     className: className,
