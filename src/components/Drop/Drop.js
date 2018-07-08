@@ -78,7 +78,7 @@ class Drop extends React.PureComponent {
     this.registerComponent()
 
     // Bind UIkit events to this component
-    Object.keys(this._events).map(eventName => {
+    Object.keys(this._events).forEach(eventName => {
       UIkit.util.on(this.node, eventName, this._events[eventName])
     })
   }
