@@ -15,25 +15,28 @@ import Card from '../Card'
 
 | Sub-component | Description |
 |-|-|
-| `Grid.Item` | This is the column for the grid. |
+| `Grid.Item` | The item/column for the grid. Extends the `Width` component. |
 
 ## Usage
 <Playground>
-  <Grid>
+  <Grid xs="expand">
     <Grid.Item>
-      <Card body>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</Card>
+      <Card body>Item</Card>
     </Grid.Item>
     <Grid.Item>
-      <Card body>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</Card>
+      <Card body>Item</Card>
+    </Grid.Item>
+    <Grid.Item>
+      <Card body>Item</Card>
     </Grid.Item>
   </Grid>
 </Playground>
-
-#### NOTE
-The `Grid` component requires that children be instances of the `Grid.Item` sub-component.
 
 ---
 
 ## Component props
 ### Grid
 <PropsTable of={Grid} />
+
+### Grid.Item
+<PropsTable of={Grid.Item} />

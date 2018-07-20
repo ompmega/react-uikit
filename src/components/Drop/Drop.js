@@ -5,7 +5,7 @@ import UIkit from 'uikit'
 
 import DropContainer from './DropContainer'
 
-class Drop extends React.PureComponent {
+class Drop extends React.Component {
 
   static propTypes = {
     mode: PropTypes.oneOf([
@@ -20,6 +20,7 @@ class Drop extends React.PureComponent {
     offset: PropTypes.number,
     delayHide: PropTypes.number,
     duration: PropTypes.number,
+    navbar: PropTypes.bool
   }
 
   static defaultProps = {
@@ -29,6 +30,7 @@ class Drop extends React.PureComponent {
     offset: 0,
     delayHide: 800,
     duration: 200,
+    navbar: false,
     onBeforeShow: f=>f,
     onShow: f=>f,
     onShown: f=>f,
@@ -96,12 +98,17 @@ class Drop extends React.PureComponent {
       duration,
       delayHide,
       offset,
+      navbar,
       ...rest
     } = this.props
 
+    const className = classNames(customClassName, {
+      'uk-navbar-dropdown': navbar
+    })
+
     return React.createElement(component, {
       ref: this.setRef,
-      className: customClassName,
+      className: className,
       ...rest
     })
   }

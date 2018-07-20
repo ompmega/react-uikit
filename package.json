@@ -1,11 +1,12 @@
 {
-  "name": "react-uikit",
-  "version": "0.0.1",
-  "description": "UIkit components built with React",
+  "name": "@ompmega/react-uikit",
+  "version": "0.0.3",
+  "description": "UIkit components for React",
   "repository": "https://github.com/ompmega/react-uikit.git",
   "author": "Daniel Ramirez <ompmega+daniel@gmail.com> (https://github.com/drmzio)",
   "license": "MIT",
   "homepage": "https://react-uikit.ompmega.com",
+  "bugs": "https://github.com/ompmega/react-uikit/issues",
   "keywords": [
     "react",
     "react-component",
@@ -13,15 +14,15 @@
     "react-uikit",
     "ecosystem-react"
   ],
-  "main": "./lib",
+  "main": "lib",
   "scripts": {
     "bundle": "babel ./src --out-dir ./lib",
     "dev": "docz dev",
     "build": "docz build"
   },
   "peerDependencies": {
-    "react": "*",
-    "react-dom": "*",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
     "uikit": "^3.*"
   },
   "dependencies": {
@@ -30,6 +31,7 @@
     "react-portal": "^4.1.5"
   },
   "devDependencies": {
+    "@svgr/cli": "^2.1.0",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-eslint": "^8.2.3",

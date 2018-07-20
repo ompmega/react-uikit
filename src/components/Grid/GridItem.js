@@ -1,18 +1,7 @@
 import React from 'react'
 
-const GridItem = (props) => {
-  const {
-    component,
-    ...rest
-  } = props
+import Width from '../Width/Width'
 
-  return React.createElement(component, {
-    ...rest
-  })
-}
-
-GridItem.defaultProps = {
-  component: 'div'
-}
+class GridItem extends Width {}
 
 export default GridItem

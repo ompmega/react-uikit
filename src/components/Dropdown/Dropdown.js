@@ -1,10 +1,9 @@
 import React from 'react'
 import UIkit from 'uikit'
 
-import Drop from '../Drop'
+import Drop from '../Drop/Drop'
 
 class Dropdown extends Drop {
-
   registerComponent = () => {
     this.component = UIkit.dropdown(this.node, this.getOptions())
   }

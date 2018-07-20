@@ -11,6 +11,6 @@ node_modules/
 jspm_packages/
 .npm
 .yarn-integrity
-.docz
-.netlify
-.idea
+.docz/
+.netlify/
+.idea/

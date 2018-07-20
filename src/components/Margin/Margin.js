@@ -14,7 +14,7 @@ const Margin = (props) => {
 
   return React.createElement(component, {
     className: className,
-    ...dynamic ? { 'data-uk-margin' : '' } : null,
+    ...dynamic ? { 'uk-margin' : '' } : undefined,
     ...rest
   })
 }

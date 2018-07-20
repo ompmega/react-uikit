@@ -1,0 +1,112 @@
+---
+name: Navbar
+route: /docs/navbar
+menu: Components
+---
+
+import { Playground, PropsTable } from 'docz'
+import Navbar from './Navbar'
+import Nav from '../Nav'
+import Link from '../Link'
+import Dropdown from '../Dropdown'
+
+# Navbar
+### Create a navigation bar that can be used for your main site navigation.
+
+| Sub-component | Description |
+|-|-|
+| `Navbar.Block` | The inner block for the navbar. |
+
+## Usage
+
+<Playground>
+  <Navbar>
+    <Navbar.Block>
+      <Nav navbar>
+        <Nav.Item active>
+          <Link>Active</Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Link>Parent</Link>
+          <Dropdown navbar>
+            <Nav>
+              <Nav.Item active>
+                <Link>Active</Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Link>Item</Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Link>Item</Link>
+              </Nav.Item>
+            </Nav>
+          </Dropdown>
+        </Nav.Item>
+        <Nav.Item>
+          <Link>Item</Link>
+        </Nav.Item>
+      </Nav>
+    </Navbar.Block>
+  </Navbar>
+</Playground>
+
+---
+
+## Multiple navigations
+
+<Playground>
+  <Navbar>
+    <Navbar.Block align="left">
+      <Nav navbar>
+        <Nav.Item active>
+          <Link>Active</Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Link>Parent</Link>
+          <Dropdown navbar>
+            <Nav>
+              <Nav.Item active>
+                <Link>Active</Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Link>Item</Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Link>Item</Link>
+              </Nav.Item>
+            </Nav>
+          </Dropdown>
+        </Nav.Item>
+        <Nav.Item>
+          <Link>Item</Link>
+        </Nav.Item>
+      </Nav>
+    </Navbar.Block>
+    <Navbar.Block align="right">
+      <Nav navbar>
+        <Nav.Item active>
+          <Link>Active</Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Link>Parent</Link>
+          <Dropdown navbar position="bottom-right">
+            <Nav>
+              <Nav.Item active>
+                <Link>Active</Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Link>Item</Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Link>Item</Link>
+              </Nav.Item>
+            </Nav>
+          </Dropdown>
+        </Nav.Item>
+        <Nav.Item>
+          <Link>Item</Link>
+        </Nav.Item>
+      </Nav>
+    </Navbar.Block>
+  </Navbar>
+</Playground>
