@@ -1,0 +1,133 @@
+---
+name: Width
+route: /docs/width
+menu: Components
+---
+
+import { Playground, PropsTable } from 'docz'
+import Width from './Width'
+import Grid from '../Grid'
+import Card from '../Card'
+import Margin from '../Margin'
+
+# Width
+### Define the width of elements for different viewport sizes.
+
+## Usage
+
+<Playground>
+  <Grid>
+    <Width xs="1-3">
+      <Card body>1-3</Card>
+    </Width>
+    <Width xs="1-3">
+      <Card body>1-3</Card>
+    </Width>
+    <Width xs="1-3">
+      <Card body>1-3</Card>
+    </Width>
+    <Width xs="1-2">
+      <Card body>1-2</Card>
+    </Width>
+    <Width xs="1-2">
+      <Card body>1-2</Card>
+    </Width>
+    <Width xs="1-4">
+      <Card body>1-4</Card>
+    </Width>
+    <Width xs="3-4">
+      <Card body>3-4</Card>
+    </Width>
+  </Grid>
+</Playground>
+
+---
+
+## Auto & Expand
+
+<Playground>
+  <Grid>
+    <Width xs="auto">
+      <Card body>Auto</Card>
+    </Width>
+    <Width xs="expand">
+      <Card body>Expand</Card>
+    </Width>
+  </Grid>
+</Playground>
+
+---
+
+## Equal child widths
+Just apply the responsive size props to the `Grid` component instead.
+
+<Playground>
+  <Grid xs="1-1" sm="1-2" md="1-4">
+    <Width>
+      <Card body>Item</Card>
+    </Width>
+    <Width>
+      <Card body>Item</Card>
+    </Width>
+    <Width>
+      <Card body>Item</Card>
+    </Width>
+    <Width>
+      <Card body>Item</Card>
+    </Width>
+    <Width>
+      <Card body>Item</Card>
+    </Width>
+  </Grid>
+</Playground>
+
+<Playground>
+  <Grid xs="expand">
+    <Width>
+      <Card body>Item</Card>
+    </Width>
+    <Width>
+      <Card body>Item</Card>
+    </Width>
+    <Width>
+      <Card body>Item</Card>
+    </Width>
+    <Width>
+      <Card body>Item</Card>
+    </Width>
+    <Width>
+      <Card body>Item</Card>
+    </Width>
+  </Grid>
+</Playground>
+
+---
+
+## Fixed width
+The fixed width classes do not utilize the response breakpoints, just use the `fixed` prop instead.
+
+<Playground>
+  <Margin dynamic>
+    <Width fixed="small">
+      <Card body>Small</Card>
+    </Width>
+    <Width fixed="medium">
+      <Card body>Medium</Card>
+    </Width>
+    <Width fixed="large">
+      <Card body>Large</Card>
+    </Width>
+    <Width fixed="xlarge">
+      <Card body>X Large</Card>
+    </Width>
+    <Width fixed="xxlarge">
+      <Card body>XX Large</Card>
+    </Width>
+  </Margin>
+</Playground>
+
+---
+
+## Component props
+### Width
+<PropsTable of={Width} />
