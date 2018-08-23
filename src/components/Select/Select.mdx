@@ -15,8 +15,41 @@ import Select from './Select'
 | `Select.Option` | The select option. |
 
 ## Usage
+
 <Playground>
   <Select>
+    <Select.Option>Select an option</Select.Option>
+    <Select.Option value={1}>Option 1</Select.Option>
+    <Select.Option value={1}>Option 2</Select.Option>
+    <Select.Option value={2}>Option 3</Select.Option>
+  </Select>
+</Playground>
+
+---
+
+## Size modifiers
+
+<Playground>
+  <Select size="small">
+    <Select.Option>Select an option</Select.Option>
+    <Select.Option value={1}>Option 1</Select.Option>
+    <Select.Option value={1}>Option 2</Select.Option>
+    <Select.Option value={2}>Option 3</Select.Option>
+  </Select>
+  <Select size="large">
+    <Select.Option>Select an option</Select.Option>
+    <Select.Option value={1}>Option 1</Select.Option>
+    <Select.Option value={1}>Option 2</Select.Option>
+    <Select.Option value={2}>Option 3</Select.Option>
+  </Select>
+</Playground>
+
+---
+
+## Blank modifier
+
+<Playground>
+  <Select blank>
     <Select.Option>Select an option</Select.Option>
     <Select.Option value={1}>Option 1</Select.Option>
     <Select.Option value={1}>Option 2</Select.Option>
